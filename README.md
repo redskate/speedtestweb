@@ -33,10 +33,7 @@ Installation step 2
 
 Install or take a web server (I took an apache web server), define a virtual server to contain a
 documentRoot=/path/to/speedtestweb/
-##################################################################
-#
-# Virtual host UNPROTECTED!!!!
-#
+
 <VirtualHost *:20000>
   ServerName cerere:20000
   DocumentRoot "/Users/you/Documents/workspace/speedtest"
