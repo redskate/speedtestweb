@@ -59,6 +59,6 @@ Add line in `crontab -e`:
 
 
 
-USE of web interface:
+<h4>Use inside your browser:</h4>
 
 Start the web server and call:  http://yourwebserver/src/php/dataserver.php
