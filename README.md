@@ -9,8 +9,7 @@ You need
 2. A web server
 
 
-
-Installation step 1
+<h4>Installation step 1</h4>
 
 Create a mysql schema "ISPEED" and a table using:
 
@@ -29,7 +28,7 @@ Then add a user on ISPEED (SELECT, INSERT)
 
 
 
-Installation step 2
+<h4>Installation step 2</h4>
 
 Install or take a web server (I took an apache web server), define a virtual server to contain a
 documentRoot=/path/to/speedtestweb/
@@ -51,7 +50,7 @@ documentRoot=/path/to/speedtestweb/
 
 
 
-Installation step 3
+<h4>Installation step 3</h4>
 crontab to call the datasampler.php at reboot:
 
 Add line in `crontab -e`:
