@@ -34,20 +34,20 @@ Installation step 2
 Install or take a web server (I took an apache web server), define a virtual server to contain a
 documentRoot=/path/to/speedtestweb/
 
-<VirtualHost *:20000>
-  ServerName cerere:20000
-  DocumentRoot "/Users/you/Documents/workspace/speedtest"
-  ErrorLog /private/var/log/apache2/servername_20000_semweb.local.err
-  TransferLog "/private/var/log/apache2/servername_20000_access.log"
+  <VirtualHost *:20000>
+    ServerName cerere:20000
+    DocumentRoot "/Users/you/Documents/workspace/speedtest"
+    ErrorLog /private/var/log/apache2/servername_20000_semweb.local.err
+    TransferLog "/private/var/log/apache2/servername_20000_access.log"
 
-  <Directory "/path/to/speedtest">
-     Order allow,deny
-     Allow from all
-     AllowOverride All
-     Options +Indexes +FollowSymLinks +ExecCGI +Includes
-     Require all granted
-  </Directory>
-</VirtualHost>
+    <Directory "/path/to/speedtest">
+        Order allow,deny
+        Allow from all
+        AllowOverride All
+        Options +Indexes +FollowSymLinks +ExecCGI +Includes
+        Require all granted
+    </Directory>
+  </VirtualHost>
 
 
 
