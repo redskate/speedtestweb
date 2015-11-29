@@ -14,16 +14,16 @@ Installation step 1
 
 Create a mysql schema "ISPEED" and a table using:
 
-  CREATE TABLE `log` (
-    `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    `distance` float DEFAULT NULL COMMENT 'km',
-    `testfrom` text,
-    `hostedby` text,
-    `ping` float DEFAULT NULL COMMENT 'msec ping time',
-    `downloadspeed` float DEFAULT NULL COMMENT 'in Mbit/s',
-    `uploadspeed` float DEFAULT NULL COMMENT 'in Mbit/s',
-    PRIMARY KEY (`timestamp`)
-  ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+  CREATE TABLE `log` (<br>
+    `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,<br>
+    `distance` float DEFAULT NULL COMMENT 'km',<br>
+    `testfrom` text,<br>
+    `hostedby` text,<br>
+    `ping` float DEFAULT NULL COMMENT 'msec ping time',<br>
+    `downloadspeed` float DEFAULT NULL COMMENT 'in Mbit/s',<br>
+    `uploadspeed` float DEFAULT NULL COMMENT 'in Mbit/s',<br>
+    PRIMARY KEY (`timestamp`)<br>
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1<br>
 
 Then add a user on ISPEED (SELECT, INSERT)
 
