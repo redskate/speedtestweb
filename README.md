@@ -1,9 +1,9 @@
 # speedtestweb
-Stores and visualizes internet Download and Upload Speeds as data series.
+Stores and visualizes internet Download and Upload Speed data graphically, without PUB.
+These scripts are based on https://github.com/sivel/speedtest-cli and http://dygraphs.com/download.html
+The project is ready to be an eclipse project (used on a mac computer) but you can just unzip it and use it as described below.
 
-This scripts are based on https://github.com/sivel/speedtest-cli
-
-You need
+<h4>You need</h4>
 
 1. A mysql database
 2. A web server
@@ -59,6 +59,6 @@ Add line in `crontab -e`:
 
 
 
-USE of web interface:
+<h4>Use inside your browser:</h4>
 
 Start the web server and call:  http://yourwebserver/src/php/dataserver.php
