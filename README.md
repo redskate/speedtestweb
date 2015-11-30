@@ -66,3 +66,8 @@ Add line in `crontab -e`:
 <h4>Use inside your browser (see your DB historized measurements graphically):</h4>
 
 Start the web server and call:  http://yourwebserver/src/php/dataserver.php
+
+<h5>Visualize last 100 datapoints:</h5>
+http://yourwebserver/src/php/dataserver.php?last=100
+<h5>Visualize last 200 datapoints and reload every minute:</h5>
+http://yourwebserver/src/php/dataserver.php?last=200&reload=60
