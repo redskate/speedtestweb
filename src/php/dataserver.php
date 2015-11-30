@@ -94,7 +94,7 @@ else // show it
   $urlcsv=$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER['HTTP_HOST']."/src/php/dataserver.php?a=csv&from=$from&to=$to&last=$last";
 	$urltxt=$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER['HTTP_HOST']."/src/php/dataserver.php?a=txt&from=$from&to=$to&last=$last";
 	$urltxtiframe=$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER['HTTP_HOST']."/src/php/dataserver.php?a=txtiframe&from=$from&to=$to&last=$last";
-	$url=$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER['HTTP_HOST']."/src/php/dataserver.php?from=$from&to=&last=$last";
+	$url=$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER['HTTP_HOST']."/src/php/dataserver.php?reload=$reload&from=$from&to=&last=$last";
 	?>
 <html>
 <head>
