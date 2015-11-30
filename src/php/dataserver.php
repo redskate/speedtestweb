@@ -122,11 +122,11 @@ else // show it
   	<?php if ($last<>'') { ?> (<?php echo $last;?>) <?php } ?></td>
   <td>
   <td>
-		<button style="margin-left: 140px; background-color:#E76600;color:white;font-size: 14px;"
+		<button style="margin-left: 120px; background-color:#E76600;color:white;font-size: 14px;"
 						onclick="window.open('<?php echo $url;?>&last='+last.value,',_self');"			
 			>(Re)Visualize</button>
 		<span> last </span>
-		<input onkeyup="if(event.keyCode==13) {window.open('<?php echo $url;?>&last='+this.value,',_self');}" 
+		<input onkeyup="if(event.keyCode==13) {window.open(URL_set_parameter('<?php echo $url;?>','last',this.value),'_self');}" 
 					 style="width: 100px;text-align:center" 
 					 type="text"
 					 value="<?php echo $last;?>"
@@ -149,6 +149,32 @@ else // show it
     	strokeWidth: 3,
     }
   );
+  function URL_set_parameter(url, param, value){
+	    var hash       = {};
+	    var parser     = document.createElement('a');
+
+	    parser.href    = url;
+
+	    var parameters = parser.search.split(/\?|&/);
+
+	    for(var i=0; i < parameters.length; i++) {
+	        if(!parameters[i])
+	            continue;
+
+	        var ary      = parameters[i].split('=');
+	        hash[ary[0]] = ary[1];
+	    }
+
+	    hash[param] = value;
+
+	    var list = [];  
+	    Object.keys(hash).forEach(function (key) {
+	        list.push(key + '=' + hash[key]);
+	    });
+
+	    parser.search = '?' + list.join('&');
+	    return parser.href;
+	}
 </script>
 </body>
 </html>
