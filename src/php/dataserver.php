@@ -126,7 +126,7 @@ else // show it
 						onclick="window.open('<?php echo $url;?>&last='+last.value,',_self');"			
 			>(Re)Visualize</button>
 		<span> last </span>
-		<input onkeyup="if(event.keyCode==13) {window.open(URL_set_parameter('<?php echo $url;?>','last',this.value),'_self');}" 
+		<input onkeyup="if(event.keyCode==13) {window.open(URL_set_parameter('<?php echo $url;?>','last',this.value));}" 
 					 style="width: 100px;text-align:center" 
 					 type="text"
 					 value="<?php echo $last;?>"
