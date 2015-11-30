@@ -21,7 +21,7 @@
   {
   	 $cwd=getcwd();
   	 $logfilename = $cwd."/locallog.txt";
-  	 $COMMAND="$cwd/speedtest_cli.py > $logfilename";
+  	 $COMMAND="$cwd/../../vendors/speedtest-cli/speedtest_cli.py > $logfilename";
   	 system($COMMAND);
   	 return file_get_contents($logfilename);
   }
