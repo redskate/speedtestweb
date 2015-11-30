@@ -47,10 +47,14 @@ documentRoot=/path/to/speedtestweb/
         Require all granted
     </Directory>
   </VirtualHost>
-
-
-
+  
 <h4>Installation step 3</h4>
+Adapt parameters inside utilities.php if needed<br>
+  $DB_HOST='127.0.0.1:3306';<br>
+  $DB_UNAME='speeduser';  <br>
+  $DB_PWORD='the rightmysqlISPEEDpassword';
+
+<h4>Installation step 4</h4>
 crontab to call the datasampler.php at reboot:
 
 Add line in `crontab -e`:
@@ -59,6 +63,6 @@ Add line in `crontab -e`:
 
 
 
-<h4>Use inside your browser:</h4>
+<h4>Use inside your browser (see your DB historized measurements graphically):</h4>
 
 Start the web server and call:  http://yourwebserver/src/php/dataserver.php
