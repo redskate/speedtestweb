@@ -71,3 +71,8 @@ Start the web server and call:  http://yourwebserver/src/php/dataserver.php
 http://yourwebserver/src/php/dataserver.php?last=100
 <h5>Visualize last 200 datapoints and reload every minute:</h5>
 http://yourwebserver/src/php/dataserver.php?last=200&reload=60
+
+<h4>Example of what you should get:</h4>
+![Alt Example of dataserver.php graphical output](https://github.com/redskate/speedtestweb/blob/master/images/picexample.png "Example of dataserver.php graphical output")
+
+<h2>ENJOY!</h2>
